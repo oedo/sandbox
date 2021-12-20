@@ -158,8 +158,9 @@ public:
 				preshutdown();
 			PostQuitMessage(0);
 			return 0;
+		default:
+			return DefWindowProc(hWnd, uMsg, wParam, lParam);
 		}
-		return DefWindowProc(hWnd, uMsg, wParam, lParam);
 	}
 
 

@@ -33,7 +33,7 @@
 #include "dxwin.h"
 
 #include "wingmesh.h"
-
+#include <xmmintrin.h>
 //--------------- for convenience -----------------
 
 inline float  Round(float a, float precision) { return floorf(0.5f + a / precision)*precision; }
